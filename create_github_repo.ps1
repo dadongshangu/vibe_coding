@@ -1,29 +1,22 @@
-# GitHub 仓库创建脚本
-# 使用方法：在 PowerShell 中运行此脚本，并按照提示输入您的 GitHub Personal Access Token
+# GitHub Repository Creation Script
+# Usage: Run this script and follow the prompts
 
 param(
     [string]$GitHubToken = "",
     [string]$RepoName = "vibe_coding",
-    [string]$Username = ""
+    [string]$Username = "LingxunMeng"
 )
 
-# 如果没有提供 token，提示用户输入
+# If no token provided, prompt user
 if ([string]::IsNullOrEmpty($GitHubToken)) {
-    Write-Host "请提供您的 GitHub Personal Access Token" -ForegroundColor Yellow
-    Write-Host "如果没有 token，请访问: https://github.com/settings/tokens" -ForegroundColor Yellow
-    $GitHubToken = Read-Host "请输入您的 GitHub Personal Access Token" -AsSecureString
-    $GitHubToken = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($GitHubToken))
+    Write-Host "Please provide your GitHub Personal Access Token" -ForegroundColor Yellow
+    Write-Host "If you don't have one, visit: https://github.com/settings/tokens" -ForegroundColor Yellow
+    $secureToken = Read-Host "Enter your GitHub Personal Access Token" -AsSecureString
+    $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureToken)
+    $GitHubToken = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
 }
 
-# 如果没有提供用户名，尝试从 git config 获取
-if ([string]::IsNullOrEmpty($Username)) {
-    $Username = git config user.name
-    if ([string]::IsNullOrEmpty($Username)) {
-        $Username = Read-Host "请输入您的 GitHub 用户名"
-    }
-}
-
-# 创建仓库的 API 请求
+# API request to create repository
 $headers = @{
     "Authorization" = "token $GitHubToken"
     "Accept" = "application/vnd.github.v3+json"
@@ -31,27 +24,32 @@ $headers = @{
 
 $body = @{
     name = $RepoName
-    description = "学习 Vibe Coding、Cursor 等功能的教程"
+    description = "Tutorials for learning Vibe Coding, Cursor and other tools"
     private = $true
 } | ConvertTo-Json
 
 try {
-    Write-Host "正在创建 GitHub 仓库..." -ForegroundColor Green
+    Write-Host "Creating GitHub repository..." -ForegroundColor Green
     $response = Invoke-RestMethod -Uri "https://api.github.com/user/repos" -Method Post -Headers $headers -Body $body -ContentType "application/json"
     
-    Write-Host "仓库创建成功！" -ForegroundColor Green
-    Write-Host "仓库 URL: $($response.html_url)" -ForegroundColor Cyan
+    Write-Host "Repository created successfully!" -ForegroundColor Green
+    Write-Host "Repository URL: $($response.html_url)" -ForegroundColor Cyan
     
-    # 添加远程仓库
-    Write-Host "正在添加远程仓库..." -ForegroundColor Green
+    # Add remote repository
+    Write-Host "Adding remote repository..." -ForegroundColor Green
     git remote add origin $response.clone_url
     
-    # 推送代码
-    Write-Host "正在推送代码..." -ForegroundColor Green
+    # Push code
+    Write-Host "Pushing code..." -ForegroundColor Green
     git push -u origin master
     
-    Write-Host "完成！" -ForegroundColor Green
+    Write-Host "Done!" -ForegroundColor Green
 } catch {
-    Write-Host "错误: $($_.Exception.Message)" -ForegroundColor Red
-    Write-Host "请检查您的 token 是否有创建仓库的权限" -ForegroundColor Yellow
+    Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Red
+    Write-Host "Please check if your token has permission to create repositories" -ForegroundColor Yellow
+    if ($_.Exception.Response) {
+        $reader = New-Object System.IO.StreamReader($_.Exception.Response.GetResponseStream())
+        $responseBody = $reader.ReadToEnd()
+        Write-Host "Response: $responseBody" -ForegroundColor Red
+    }
 }
