@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📝 我的博客</h1>
+            <nav>
+                <a href="/">首页</a>
+                <a href="/editor">写文章</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="postDetail" class="post-detail">
+            <div class="loading">加载中...</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>使用 Vibe Coding 方法创建 | 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        const postId = {{ post_id }};
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

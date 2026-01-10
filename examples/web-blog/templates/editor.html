@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章编辑器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📝 我的博客</h1>
+            <nav>
+                <a href="/">首页</a>
+                <a href="/editor">写文章</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="editor-container">
+            <h2 id="editorTitle">创建新文章</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="title">标题 *</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">分类</label>
+                    <select id="category">
+                        <option value="">选择分类</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tags">标签（用逗号分隔）</label>
+                    <input type="text" id="tags" placeholder="例如: Python, Flask, Web开发">
+                </div>
+                <div class="form-group">
+                    <label for="content">内容 *</label>
+                    <textarea id="content" rows="15" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <a href="/" class="btn btn-secondary">取消</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>使用 Vibe Coding 方法创建 | 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        const postId = {{ post_id if post_id else 'null' }};
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

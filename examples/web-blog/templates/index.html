@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📝 我的博客</h1>
+            <nav>
+                <a href="/">首页</a>
+                <a href="/editor">写文章</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="搜索文章...">
+            <select id="categoryFilter">
+                <option value="">所有分类</option>
+            </select>
+            <button onclick="loadPosts()">搜索</button>
+        </div>
+
+        <div id="postsContainer" class="posts-container">
+            <div class="loading">加载中...</div>
+        </div>
+
+        <div id="pagination" class="pagination"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>使用 Vibe Coding 方法创建 | 2024</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
