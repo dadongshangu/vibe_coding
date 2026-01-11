@@ -687,20 +687,20 @@ Vibe Coding 是一种全新的编程方式，通过 AI 辅助，让编程变得�
 <div class="nav-item">
   <p class="nav-label">上一篇</p>
   <p class="nav-link">
-    <a href="../README.html">← 教程索引</a>
+    <a href="/vibe_coding/tutorials/README.html">← 教程索引</a>
   </p>
 </div>
 
 <div class="nav-item center">
   <p class="nav-link">
-    <a href="../../index.html">🏠 返回主页</a>
+    <a href="/vibe_coding/">🏠 返回主页</a>
   </p>
 </div>
 
 <div class="nav-item right">
   <p class="nav-label">下一篇</p>
   <p class="nav-link">
-    <a href="../cursor/quick-reference.html">Cursor 快速参考手册 →</a>
+    <a href="/vibe_coding/tutorials/cursor/quick-reference.html">Cursor 快速参考手册 →</a>
   </p>
 </div>
 

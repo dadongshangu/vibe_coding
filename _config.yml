@@ -5,6 +5,10 @@ title: Vibe Coding 学习教程
 description: Vibe Coding 和 Cursor 完整教程体系
 theme: jekyll-theme-minimal
 
+# GitHub Pages baseurl（项目页面需要设置）
+baseurl: "/vibe_coding"
+url: "https://dadongshangu.github.io"
+
 # 启用 Markdown 中的 HTML
 markdown: kramdown
 kramdown:

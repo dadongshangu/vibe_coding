@@ -408,20 +408,20 @@
 <div class="nav-item">
   <p class="nav-label">上一篇</p>
   <p class="nav-link">
-    <a href="../vibe-coding/beginner-guide.html">← Vibe Coding 初学者完全指南</a>
+    <a href="/vibe_coding/tutorials/vibe-coding/beginner-guide.html">← Vibe Coding 初学者完全指南</a>
   </p>
 </div>
 
 <div class="nav-item center">
   <p class="nav-link">
-    <a href="../../index.html">🏠 返回主页</a>
+    <a href="/vibe_coding/">🏠 返回主页</a>
   </p>
 </div>
 
 <div class="nav-item right">
   <p class="nav-label">下一篇</p>
   <p class="nav-link">
-    <a href="../vibe-coding/prompt-engineering.html">Prompt 工程完全指南 →</a>
+    <a href="/vibe_coding/tutorials/vibe-coding/prompt-engineering.html">Prompt 工程完全指南 →</a>
   </p>
 </div>
 
