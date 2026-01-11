@@ -19,6 +19,7 @@
   - 安全性深入
   - 性能优化
   - 大型项目管理
+  - Vibe Coding 的局限性和改进方法
 
 - **[Prompt 工程完全指南](vibe-coding/prompt-engineering.md)** ⭐ 提高效率必备
   - Prompt 设计原则

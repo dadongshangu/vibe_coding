@@ -69,6 +69,7 @@ vibe_coding/
   - 团队协作
   - 调试技巧
   - 常见陷阱和错误
+  - Vibe Coding 的局限性和改进方法
 
 - **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握沟通艺术
   - Prompt 设计原则
