@@ -482,8 +482,8 @@ async function getUser(userId) {
 
 ### 下一步
 
-- 查看 [快速参考](./quick-reference.html) 了解所有快捷键
-- 学习 [Vibe Coding 高级指南](../vibe-coding/advanced-guide.html)
+- 查看 [快速参考](./quick-reference.md) 了解所有快捷键
+- 学习 [Vibe Coding 高级指南](../vibe-coding/advanced-guide.md)
 - 实践使用这些高级功能
 
 ---

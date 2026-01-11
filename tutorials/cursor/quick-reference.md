@@ -425,4 +425,4 @@
 
 ---
 
-返回 [Vibe Coding 初学者指南](../vibe-coding/beginner-guide.html)
+返回 [Vibe Coding 初学者指南](../vibe-coding/beginner-guide.md)

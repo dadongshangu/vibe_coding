@@ -795,10 +795,10 @@ AI 生成的代码可能不符合你的预期：
 
 ### 下一步
 
-- 查看 [Prompt 工程专门指南](./prompt-engineering.html)
-- 学习 [实战项目案例](./case-studies.html)
-- 阅读 [故障排除指南](./troubleshooting.html)
-- 探索 [Cursor 高级功能](../cursor/advanced-features.html)
+- 查看 [Prompt 工程专门指南](./prompt-engineering.md)
+- 学习 [实战项目案例](./case-studies.md)
+- 阅读 [故障排除指南](./troubleshooting.md)
+- 探索 [Cursor 高级功能](../cursor/advanced-features.md)
 
 ---
 

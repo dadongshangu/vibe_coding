@@ -677,8 +677,8 @@ frontend/
 
 ### 下一步
 
-- 查看 [高级指南](./advanced-guide.html) 了解更多技巧
-- 学习 [实战项目案例](./case-studies.html) 看实际应用
+- 查看 [高级指南](./advanced-guide.md) 了解更多技巧
+- 学习 [实战项目案例](./case-studies.md) 看实际应用
 - 实践编写 Prompt，不断改进
 
 ---
