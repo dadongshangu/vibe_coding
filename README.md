@@ -23,6 +23,11 @@
 10. **[高级实践项目](examples/)** - 完成更复杂的项目
 11. **[故障排除指南](tutorials/vibe-coding/troubleshooting.md)** - 解决常见问题
 
+#### 扩展学习
+12. **[工具对比和选择指南](tutorials/vibe-coding/tools-comparison.md)** - 全面对比主流 AI 编程工具
+13. **[VS Code AI 集成指南](tutorials/vibe-coding/vscode-integration.md)** - 在 VS Code 中使用 AI 工具
+14. **[其他 AI 编程工具](tutorials/vibe-coding/other-tools.md)** - GitHub Copilot、Tabnine、Codeium 等
+
 ## 📚 目录结构
 
 ```
@@ -33,7 +38,10 @@ vibe_coding/
 │   │   ├── advanced-guide.md      # 高级指南
 │   │   ├── prompt-engineering.md # Prompt 工程指南
 │   │   ├── case-studies.md        # 实战项目案例
-│   │   └── troubleshooting.md     # 故障排除指南
+│   │   ├── troubleshooting.md     # 故障排除指南
+│   │   ├── tools-comparison.md    # 工具对比和选择指南
+│   │   ├── vscode-integration.md  # VS Code AI 集成指南
+│   │   └── other-tools.md         # 其他 AI 编程工具
 │   ├── cursor/            # Cursor 相关教程
 │   │   ├── quick-reference.md     # 快速参考手册
 │   │   └── advanced-features.md   # 高级功能指南
@@ -70,6 +78,7 @@ vibe_coding/
   - 调试技巧
   - 常见陷阱和错误
   - Vibe Coding 的局限性和改进方法
+  - Vibe Coding 的发展趋势和未来展望
 
 - **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握沟通艺术
   - Prompt 设计原则
@@ -94,6 +103,28 @@ vibe_coding/
   - 性能问题排查
   - 依赖管理问题
   - 常见错误和解决方案
+
+- **[工具对比和选择指南](tutorials/vibe-coding/tools-comparison.md)** - 选择最适合的工具
+  - 主流工具功能对比
+  - 成本对比分析
+  - 适用场景分析
+  - 选择决策指南
+  - 迁移指南
+
+- **[VS Code AI 集成指南](tutorials/vibe-coding/vscode-integration.md)** - 在 VS Code 中使用 AI
+  - GitHub Copilot 集成
+  - Tabnine 集成
+  - Codeium 集成
+  - Bito AI 集成
+  - 组合使用策略
+  - 与 Cursor 对比
+
+- **[其他 AI 编程工具](tutorials/vibe-coding/other-tools.md)** - 探索更多工具
+  - GitHub Copilot 完全指南
+  - Tabnine 使用指南
+  - Codeium 完全指南
+  - Bito AI 使用指南
+  - 其他工具简介
 
 ### 🛠️ Cursor 教程
 

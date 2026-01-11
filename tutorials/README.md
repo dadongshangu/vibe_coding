@@ -20,6 +20,7 @@
   - 性能优化
   - 大型项目管理
   - Vibe Coding 的局限性和改进方法
+  - Vibe Coding 的发展趋势和未来展望
 
 - **[Prompt 工程完全指南](vibe-coding/prompt-engineering.md)** ⭐ 提高效率必备
   - Prompt 设计原则
@@ -37,6 +38,25 @@
   - 常见问题解决
   - 调试技巧
   - 性能问题排查
+
+#### 扩展教程
+- **[工具对比和选择指南](vibe-coding/tools-comparison.md)** ⭐ 选择最适合的工具
+  - 主流工具功能对比
+  - 成本对比分析
+  - 适用场景分析
+  - 选择决策指南
+
+- **[VS Code AI 集成指南](vibe-coding/vscode-integration.md)** ⭐ VS Code 用户必备
+  - GitHub Copilot 集成
+  - Tabnine 集成
+  - Codeium 集成
+  - 组合使用策略
+
+- **[其他 AI 编程工具](vibe-coding/other-tools.md)**
+  - GitHub Copilot 完全指南
+  - Tabnine 使用指南
+  - Codeium 完全指南
+  - Bito AI 使用指南
 
 ### 🛠️ Cursor 教程
 
@@ -90,9 +110,12 @@
 
 ### 路径 3：深入学习（2-3个月）
 1. 完成路径 2 的所有内容
-2. 独立完成多个项目
-3. 深入研究 [故障排除指南](vibe-coding/troubleshooting.md)
-4. 分享经验和贡献
+2. 学习 [工具对比和选择指南](vibe-coding/tools-comparison.md)
+3. 学习 [VS Code AI 集成指南](vibe-coding/vscode-integration.md)
+4. 探索 [其他 AI 编程工具](vibe-coding/other-tools.md)
+5. 独立完成多个项目
+6. 深入研究 [故障排除指南](vibe-coding/troubleshooting.md)
+7. 分享经验和贡献
 
 ## 📖 教程特点
 
