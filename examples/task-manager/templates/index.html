@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务管理器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✅ 任务管理器</h1>
+            <nav>
+                <a href="/">任务列表</a>
+                <a href="/stats">统计</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="toolbar">
+            <button class="btn btn-primary" onclick="showTaskForm()">+ 新建任务</button>
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="搜索任务..." onkeyup="applyFilters()">
+                <select id="statusFilter" onchange="applyFilters()">
+                    <option value="">所有状态</option>
+                    <option value="待办">待办</option>
+                    <option value="进行中">进行中</option>
+                    <option value="已完成">已完成</option>
+                </select>
+                <select id="priorityFilter" onchange="applyFilters()">
+                    <option value="">所有优先级</option>
+                    <option value="高">高</option>
+                    <option value="中">中</option>
+                    <option value="低">低</option>
+                </select>
+                <select id="categoryFilter" onchange="applyFilters()">
+                    <option value="">所有分类</option>
+                </select>
+                <select id="sortSelect" onchange="applyFilters()">
+                    <option value="created_at-desc">创建时间（新）</option>
+                    <option value="created_at-asc">创建时间（旧）</option>
+                    <option value="due_date-asc">截止日期（早）</option>
+                    <option value="due_date-desc">截止日期（晚）</option>
+                    <option value="priority-desc">优先级（高→低）</option>
+                    <option value="priority-asc">优先级（低→高）</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="tasksContainer" class="tasks-container">
+            <div class="loading">加载中...</div>
+        </div>
+    </main>
+
+    <!-- 任务表单模态框 -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTaskForm()">&times;</span>
+            <h2 id="modalTitle">新建任务</h2>
+            <form id="taskForm">
+                <input type="hidden" id="taskId">
+                <div class="form-group">
+                    <label for="title">标题 *</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">描述</label>
+                    <textarea id="description" rows="4"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="priority">优先级</label>
+                        <select id="priority">
+                            <option value="高">高</option>
+                            <option value="中" selected>中</option>
+                            <option value="低">低</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">状态</label>
+                        <select id="status">
+                            <option value="待办" selected>待办</option>
+                            <option value="进行中">进行中</option>
+                            <option value="已完成">已完成</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">分类</label>
+                        <input type="text" id="category" placeholder="例如: 工作、学习">
+                    </div>
+                    <div class="form-group">
+                        <label for="dueDate">截止日期</label>
+                        <input type="date" id="dueDate">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeTaskForm()">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>使用 Vibe Coding 方法创建 | 2024</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
