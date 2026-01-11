@@ -7,19 +7,19 @@
 ### 学习路径
 
 #### 初学者路径（1-2周）
-1. **[Vibe Coding 初学者完全指南](tutorials/vibe-coding/beginner-guide.md)** - 从零开始学习 Vibe Coding 和 Cursor
-2. **[Cursor 快速参考手册](tutorials/cursor/quick-reference.md)** - Cursor 快捷键和命令速查
+1. **[Vibe Coding 初学者完全指南](tutorials/vibe-coding/beginner-guide.html)** - 从零开始学习 Vibe Coding 和 Cursor
+2. **[Cursor 快速参考手册](tutorials/cursor/quick-reference.html)** - Cursor 快捷键和命令速查
 3. **[Hello Vibe Coding 示例项目](examples/hello-vibe-coding/)** - 通过实践项目巩固学习
 
 #### 进阶路径（2-4周）
-4. **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握与 AI 高效沟通的艺术
-5. **[Vibe Coding 高级指南](tutorials/vibe-coding/advanced-guide.md)** - 深入学习高级技巧和最佳实践
-6. **[Cursor 高级功能指南](tutorials/cursor/advanced-features.md)** - 掌握 Cursor 的高级功能
+4. **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.html)** - 掌握与 AI 高效沟通的艺术
+5. **[Vibe Coding 高级指南](tutorials/vibe-coding/advanced-guide.html)** - 深入学习高级技巧和最佳实践
+6. **[Cursor 高级功能指南](tutorials/cursor/advanced-features.html)** - 掌握 Cursor 的高级功能
 
 #### 实战路径（1-2个月）
-7. **[实战项目案例](tutorials/vibe-coding/case-studies.md)** - 学习完整项目的开发过程
+7. **[实战项目案例](tutorials/vibe-coding/case-studies.html)** - 学习完整项目的开发过程
 8. **[高级实践项目](examples/)** - 完成更复杂的项目
-9. **[故障排除指南](tutorials/vibe-coding/troubleshooting.md)** - 解决常见问题
+9. **[故障排除指南](tutorials/vibe-coding/troubleshooting.html)** - 解决常见问题
 
 ## 📚 目录结构
 
@@ -46,7 +46,7 @@ vibe_coding/
 ### 🎓 Vibe Coding 教程
 
 #### 基础教程
-- **[初学者完全指南](tutorials/vibe-coding/beginner-guide.md)** - 从零开始
+- **[初学者完全指南](tutorials/vibe-coding/beginner-guide.html)** - 从零开始
   - 什么是 Vibe Coding
   - Cursor 编辑器基础
   - 核心功能详解
@@ -55,7 +55,7 @@ vibe_coding/
   - 最佳实践和技巧
 
 #### 进阶教程
-- **[高级指南](tutorials/vibe-coding/advanced-guide.md)** - 深入学习
+- **[高级指南](tutorials/vibe-coding/advanced-guide.html)** - 深入学习
   - Prompt 工程高级技巧
   - 代码质量保证
   - 安全性深入
@@ -65,7 +65,7 @@ vibe_coding/
   - 调试技巧
   - 常见陷阱和错误
 
-- **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握沟通艺术
+- **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.html)** - 掌握沟通艺术
   - Prompt 设计原则
   - 上下文管理技巧
   - 迭代优化策略
@@ -74,14 +74,14 @@ vibe_coding/
   - 实战案例
 
 #### 实战教程
-- **[实战项目案例](tutorials/vibe-coding/case-studies.md)** - 完整项目开发
+- **[实战项目案例](tutorials/vibe-coding/case-studies.html)** - 完整项目开发
   - 项目一：个人博客网站
   - 项目二：任务管理应用
   - 项目三：REST API 服务
   - 项目四：实时聊天应用
   - 经验总结
 
-- **[故障排除指南](tutorials/vibe-coding/troubleshooting.md)** - 解决问题
+- **[故障排除指南](tutorials/vibe-coding/troubleshooting.html)** - 解决问题
   - 代码不工作怎么办？
   - AI 理解错误怎么办？
   - 如何调试复杂问题？
@@ -92,7 +92,7 @@ vibe_coding/
 ### 🛠️ Cursor 教程
 
 #### 基础参考
-- **[快速参考手册](tutorials/cursor/quick-reference.md)** - 速查表
+- **[快速参考手册](tutorials/cursor/quick-reference.html)** - 速查表
   - 快捷键速查表
   - 常用命令
   - 界面布局说明
@@ -100,7 +100,7 @@ vibe_coding/
   - AI 功能使用
 
 #### 高级功能
-- **[高级功能指南](tutorials/cursor/advanced-features.md)** - 深入掌握
+- **[高级功能指南](tutorials/cursor/advanced-features.html)** - 深入掌握
   - Composer 深度使用
   - Multi-Agents 高级应用
   - 代码库索引和查询
@@ -187,3 +187,25 @@ vibe_coding/
 ## 📄 许可证
 
 本项目仅用于学习目的。
+
+---
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding: 20px; background: #f5f5f5; border-radius: 8px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">上一篇</p>
+    <p style="margin: 5px 0 0 0; color: #999;">
+      已是第一篇
+    </p>
+  </div>
+  <div style="flex: 1; text-align: center; min-width: 150px;">
+    <p style="margin: 0; color: #999;">
+      当前在主页
+    </p>
+  </div>
+  <div style="flex: 1; text-align: right; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
+    <p style="margin: 5px 0 0 0;">
+      <a href="/vibe_coding/tutorials/README.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">教程索引 →</a>
+    </p>
+  </div>
+</div>
