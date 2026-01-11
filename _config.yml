@@ -1,9 +1,0 @@
-# Jekyll 配置文件
-# 用于 GitHub Pages
-
-title: Vibe Coding 学习教程
-description: Vibe Coding 和 Cursor 完整教程体系
-
-# GitHub Pages baseurl（项目页面需要设置）
-baseurl: "/vibe_coding"
-url: "https://dadongshangu.github.io"
