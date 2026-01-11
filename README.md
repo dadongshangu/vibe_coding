@@ -128,6 +128,12 @@ vibe_coding/
   - 拖拽功能、实时同步
   - 复杂状态管理
 
+- **[API Service](examples/api-service/)** - REST API 服务
+  - 完整的 RESTful API 实现
+  - JWT 认证系统
+  - 数据验证和错误处理
+  - API 文档和测试
+
 ## 🎯 内容说明
 
 ### Tutorials（教程）
