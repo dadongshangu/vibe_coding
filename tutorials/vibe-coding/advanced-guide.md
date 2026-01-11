@@ -416,10 +416,16 @@ for user in users:
 
 ✅ **优化后**：
 ```python
+from itertools import groupby
+
 users = get_all_users()
 user_ids = [user.id for user in users]
 posts = get_posts_by_users(user_ids)  # 批量查询
-posts_dict = {user_id: posts for user_id, posts in groupby(posts, key=lambda x: x.user_id)}
+# 按 user_id 分组（groupby 需要先排序）
+posts_sorted = sorted(posts, key=lambda x: x.user_id)
+posts_dict = {}
+for user_id, user_posts in groupby(posts_sorted, key=lambda x: x.user_id):
+    posts_dict[user_id] = list(user_posts)
 for user in users:
     user.posts = posts_dict.get(user.id, [])
 ```
