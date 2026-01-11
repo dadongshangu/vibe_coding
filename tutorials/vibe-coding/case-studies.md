@@ -572,4 +572,32 @@ DELETE /api/articles/:id    # 删除文章（需要认证）
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link">
+    <a href="../cursor/advanced-features.html">← Cursor 高级功能指南</a>
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../README.html">📚 返回目录</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link">
+    <a href="./troubleshooting.html">故障排除指南 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 **通过实践，不断进步！** 🚀

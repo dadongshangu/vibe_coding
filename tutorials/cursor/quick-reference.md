@@ -401,4 +401,32 @@
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link">
+    <a href="../vibe-coding/beginner-guide.html">← Vibe Coding 初学者完全指南</a>
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../README.html">📚 返回目录</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link">
+    <a href="../vibe-coding/prompt-engineering.html">Prompt 工程完全指南 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 返回 [Vibe Coding 初学者指南](../vibe-coding/beginner-guide.md)

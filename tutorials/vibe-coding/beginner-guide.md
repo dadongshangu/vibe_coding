@@ -682,4 +682,32 @@ Vibe Coding 是一种全新的编程方式，通过 AI 辅助，让编程变得�
 
 ---
 
+## navigation
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+
+<div style="flex: 1;">
+  <p style="margin: 0; color: #666; font-size: 14px;">上一篇</p>
+  <p style="margin: 5px 0 0 0;">
+    <a href="../README.md" style="color: #0366d6; text-decoration: none;">← 教程索引</a>
+  </p>
+</div>
+
+<div style="flex: 1; text-align: center;">
+  <p style="margin: 0;">
+    <a href="../README.md" style="color: #0366d6; text-decoration: none;">📚 返回目录</a>
+  </p>
+</div>
+
+<div style="flex: 1; text-align: right;">
+  <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
+  <p style="margin: 5px 0 0 0;">
+    <a href="../cursor/quick-reference.md" style="color: #0366d6; text-decoration: none;">Cursor 快速参考手册 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 **祝你学习愉快！** 🚀

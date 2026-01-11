@@ -1,0 +1,36 @@
+# Jekyll 配置文件
+# 用于 GitHub Pages
+
+title: Vibe Coding 学习教程
+description: Vibe Coding 和 Cursor 完整教程体系
+theme: jekyll-theme-minimal
+
+# 启用 Markdown 中的 HTML
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# 包含的文件
+include:
+  - tutorials
+  - examples
+
+# 排除的文件
+exclude:
+  - README.md
+  - SETUP_GITHUB.md
+  - create_github_repo.ps1
+  - .git
+  - .gitignore
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 其他设置
+safe: true
+lsi: false
+incremental: false

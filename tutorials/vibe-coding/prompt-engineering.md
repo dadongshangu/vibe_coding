@@ -683,4 +683,32 @@ frontend/
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link">
+    <a href="../cursor/quick-reference.html">← Cursor 快速参考手册</a>
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../README.html">📚 返回目录</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link">
+    <a href="./advanced-guide.html">Vibe Coding 高级指南 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 **记住：好的 Prompt = 好的代码！** 🚀

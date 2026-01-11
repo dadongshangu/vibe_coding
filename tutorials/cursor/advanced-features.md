@@ -488,4 +488,32 @@ async function getUser(userId) {
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link">
+    <a href="../vibe-coding/advanced-guide.html">← Vibe Coding 高级指南</a>
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../README.html">📚 返回目录</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link">
+    <a href="../vibe-coding/case-studies.html">实战项目案例 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 **掌握高级功能，提升开发效率！** 🚀

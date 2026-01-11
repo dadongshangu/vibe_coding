@@ -871,4 +871,32 @@ API 调用失败：
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link">
+    <a href="./case-studies.html">← 实战项目案例</a>
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../README.html">📚 返回目录</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link nav-disabled">
+    已是最后一篇
+  </p>
+</div>
+
+</div>
+
+---
+
 **遇到问题不要慌，系统化解决！** 🚀

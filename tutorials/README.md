@@ -88,4 +88,32 @@
 
 ---
 
+---
+
+<div class="navigation">
+
+<div class="nav-item">
+  <p class="nav-label">上一篇</p>
+  <p class="nav-link nav-disabled">
+    已是第一篇
+  </p>
+</div>
+
+<div class="nav-item center">
+  <p class="nav-link">
+    <a href="../index.html">🏠 返回主页</a>
+  </p>
+</div>
+
+<div class="nav-item right">
+  <p class="nav-label">下一篇</p>
+  <p class="nav-link">
+    <a href="vibe-coding/beginner-guide.html">Vibe Coding 初学者完全指南 →</a>
+  </p>
+</div>
+
+</div>
+
+---
+
 **选择适合你的路径，开始学习吧！** 🚀
