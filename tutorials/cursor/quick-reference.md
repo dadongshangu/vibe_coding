@@ -1,8 +1,3 @@
----
-layout: default
-title: Cursor 快速参考手册
----
-
 # Cursor 快速参考手册
 
 > Cursor IDE 快捷键、命令和配置速查表
@@ -408,28 +403,24 @@ title: Cursor 快速参考手册
 
 ---
 
-<div class="navigation">
-
-<div class="nav-item">
-  <p class="nav-label">上一篇</p>
-  <p class="nav-link">
-    <a href="/vibe_coding/tutorials/vibe-coding/beginner-guide.html">← Vibe Coding 初学者完全指南</a>
-  </p>
-</div>
-
-<div class="nav-item center">
-  <p class="nav-link">
-    <a href="/vibe_coding/">🏠 返回主页</a>
-  </p>
-</div>
-
-<div class="nav-item right">
-  <p class="nav-label">下一篇</p>
-  <p class="nav-link">
-    <a href="/vibe_coding/tutorials/vibe-coding/prompt-engineering.html">Prompt 工程完全指南 →</a>
-  </p>
-</div>
-
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding: 20px; background: #f5f5f5; border-radius: 8px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">上一篇</p>
+    <p style="margin: 5px 0 0 0;">
+      <a href="/vibe_coding/tutorials/vibe-coding/beginner-guide.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">← Vibe Coding 初学者完全指南</a>
+    </p>
+  </div>
+  <div style="flex: 1; text-align: center; min-width: 150px;">
+    <p style="margin: 0;">
+      <a href="/vibe_coding/" style="color: #0366d6; text-decoration: none; font-weight: 500;">🏠 返回主页</a>
+    </p>
+  </div>
+  <div style="flex: 1; text-align: right; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
+    <p style="margin: 5px 0 0 0;">
+      <a href="/vibe_coding/tutorials/vibe-coding/prompt-engineering.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">Prompt 工程完全指南 →</a>
+    </p>
+  </div>
 </div>
 
 ---

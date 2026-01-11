@@ -7,28 +7,3 @@ description: Vibe Coding 和 Cursor 完整教程体系
 # GitHub Pages baseurl（项目页面需要设置）
 baseurl: "/vibe_coding"
 url: "https://dadongshangu.github.io"
-
-# 启用 Markdown 中的 HTML
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-
-# 包含的文件
-include:
-  - tutorials
-  - examples
-
-# 排除的文件
-exclude:
-  - README.md
-  - SETUP_GITHUB.md
-  - create_github_repo.ps1
-  - .git
-  - .gitignore
-
-# 其他设置
-safe: true
-lsi: false
-incremental: false

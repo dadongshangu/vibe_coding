@@ -1,8 +1,3 @@
----
-layout: default
-title: Prompt 工程完全指南
----
-
 # Prompt 工程完全指南
 
 > 掌握与 AI 高效沟通的艺术，编写高质量的 Prompt
@@ -690,28 +685,24 @@ frontend/
 
 ---
 
-<div class="navigation">
-
-<div class="nav-item">
-  <p class="nav-label">上一篇</p>
-  <p class="nav-link">
-    <a href="/vibe_coding/tutorials/cursor/quick-reference.html">← Cursor 快速参考手册</a>
-  </p>
-</div>
-
-<div class="nav-item center">
-  <p class="nav-link">
-    <a href="/vibe_coding/">🏠 返回主页</a>
-  </p>
-</div>
-
-<div class="nav-item right">
-  <p class="nav-label">下一篇</p>
-  <p class="nav-link">
-    <a href="/vibe_coding/tutorials/vibe-coding/advanced-guide.html">Vibe Coding 高级指南 →</a>
-  </p>
-</div>
-
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding: 20px; background: #f5f5f5; border-radius: 8px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">上一篇</p>
+    <p style="margin: 5px 0 0 0;">
+      <a href="/vibe_coding/tutorials/cursor/quick-reference.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">← Cursor 快速参考手册</a>
+    </p>
+  </div>
+  <div style="flex: 1; text-align: center; min-width: 150px;">
+    <p style="margin: 0;">
+      <a href="/vibe_coding/" style="color: #0366d6; text-decoration: none; font-weight: 500;">🏠 返回主页</a>
+    </p>
+  </div>
+  <div style="flex: 1; text-align: right; min-width: 150px;">
+    <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
+    <p style="margin: 5px 0 0 0;">
+      <a href="/vibe_coding/tutorials/vibe-coding/advanced-guide.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">Vibe Coding 高级指南 →</a>
+    </p>
+  </div>
 </div>
 
 ---
