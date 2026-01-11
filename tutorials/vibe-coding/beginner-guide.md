@@ -631,14 +631,14 @@ def process_users(users: List[Dict[str, str]]) -> Optional[int]:
 
 ### 阶段 2：技能提升（2-4周）
 
-- 📚 学习 [Prompt 工程](./prompt-engineering.md)
-- 📚 学习 [高级指南](./advanced-guide.md)
+- 📚 学习 [Prompt 工程](./prompt-engineering.html)
+- 📚 学习 [高级指南](./advanced-guide.html)
 - 🛠️ 完成中等复杂度项目
 
 ### 阶段 3：高级应用（1-2个月）
 
-- 🎯 学习 [实战案例](./case-studies.md)
-- 🎯 掌握 [Cursor 高级功能](../cursor/advanced-features.md)
+- 🎯 学习 [实战案例](./case-studies.html)
+- 🎯 掌握 [Cursor 高级功能](../cursor/advanced-features.html)
 - 🚀 完成复杂项目
 
 ### 阶段 4：专家级（持续）
@@ -661,11 +661,11 @@ Vibe Coding 是一种全新的编程方式，通过 AI 辅助，让编程变得�
 
 ### 下一步
 
-- 查看 [Cursor 快速参考](../cursor/quick-reference.md)
+- 查看 [Cursor 快速参考](../cursor/quick-reference.html)
 - 尝试 [实践示例](../../examples/hello-vibe-coding/)
-- 学习 [高级指南](./advanced-guide.md) 深入掌握
-- 阅读 [Prompt 工程指南](./prompt-engineering.md) 提高效率
-- 查看 [实战案例](./case-studies.md) 学习完整项目
+- 学习 [高级指南](./advanced-guide.html) 深入掌握
+- 阅读 [Prompt 工程指南](./prompt-engineering.html) 提高效率
+- 查看 [实战案例](./case-studies.html) 学习完整项目
 - 开始你的第一个 Vibe Coding 项目！
 
 ---
@@ -675,10 +675,10 @@ Vibe Coding 是一种全新的编程方式，通过 AI 辅助，让编程变得�
 - [Cursor 官方文档](https://docs.cursor.sh/)
 - [Vibe Coding Wikipedia](https://en.wikipedia.org/wiki/Vibe_coding)
 - [Vibe Coding 101](https://www.vibecoding101.net/)
-- [高级指南](./advanced-guide.md) - 深入学习
-- [Prompt 工程](./prompt-engineering.md) - 提高效率
-- [实战案例](./case-studies.md) - 完整项目
-- [故障排除](./troubleshooting.md) - 解决问题
+- [高级指南](./advanced-guide.html) - 深入学习
+- [Prompt 工程](./prompt-engineering.html) - 提高效率
+- [实战案例](./case-studies.html) - 完整项目
+- [故障排除](./troubleshooting.html) - 解决问题
 
 ---
 

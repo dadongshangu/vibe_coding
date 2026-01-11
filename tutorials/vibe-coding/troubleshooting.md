@@ -865,8 +865,8 @@ API 调用失败：
 
 ### 下一步
 
-- 查看 [高级指南](./advanced-guide.md) 学习更多技巧
-- 学习 [实战案例](./case-studies.md) 看实际应用
+- 查看 [高级指南](./advanced-guide.html) 学习更多技巧
+- 学习 [实战案例](./case-studies.html) 看实际应用
 - 实践调试，提高技能
 
 ---

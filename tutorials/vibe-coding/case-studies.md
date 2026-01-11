@@ -566,9 +566,9 @@ DELETE /api/articles/:id    # 删除文章（需要认证）
 
 ## 下一步
 
-- 查看 [高级指南](./advanced-guide.md) 学习更多技巧
-- 学习 [Prompt 工程](./prompt-engineering.md) 提高效率
-- 阅读 [故障排除](./troubleshooting.md) 解决常见问题
+- 查看 [高级指南](./advanced-guide.html) 学习更多技巧
+- 学习 [Prompt 工程](./prompt-engineering.html) 提高效率
+- 阅读 [故障排除](./troubleshooting.html) 解决常见问题
 
 ---
 
