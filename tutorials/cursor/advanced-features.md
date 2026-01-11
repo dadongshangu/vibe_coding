@@ -505,7 +505,7 @@ async function getUser(userId) {
   <div style="flex: 1; text-align: right; min-width: 150px;">
     <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
     <p style="margin: 5px 0 0 0;">
-      <a href="/vibe_coding/tutorials/vibe-coding/case-studies.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">实战项目案例 →</a>
+      <a href="/vibe_coding/tutorials/claude-code/advanced-techniques.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">Claude Code 高级技巧 →</a>
     </p>
   </div>
 </div>
