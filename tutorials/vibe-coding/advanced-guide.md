@@ -815,7 +815,7 @@ AI 生成的代码可能不符合你的预期：
 
 <div class="nav-item center">
   <p class="nav-link">
-    <a href="../README.html">📚 返回目录</a>
+    <a href="../../index.html">🏠 返回主页</a>
   </p>
 </div>
 

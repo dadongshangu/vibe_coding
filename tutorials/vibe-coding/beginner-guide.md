@@ -693,7 +693,7 @@ Vibe Coding 是一种全新的编程方式，通过 AI 辅助，让编程变得�
 
 <div class="nav-item center">
   <p class="nav-link">
-    <a href="../README.html">📚 返回目录</a>
+    <a href="../../index.html">🏠 返回主页</a>
   </p>
 </div>
 
