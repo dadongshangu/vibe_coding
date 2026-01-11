@@ -3,7 +3,6 @@
 
 title: Vibe Coding 学习教程
 description: Vibe Coding 和 Cursor 完整教程体系
-theme: jekyll-theme-minimal
 
 # GitHub Pages baseurl（项目页面需要设置）
 baseurl: "/vibe_coding"
@@ -28,11 +27,6 @@ exclude:
   - create_github_repo.ps1
   - .git
   - .gitignore
-
-# 插件
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
 
 # 其他设置
 safe: true

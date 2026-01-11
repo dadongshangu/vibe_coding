@@ -1,3 +1,8 @@
+---
+layout: default
+title: Cursor 高级功能指南
+---
+
 # Cursor 高级功能指南
 
 > 深入掌握 Cursor 的高级功能，提升开发效率

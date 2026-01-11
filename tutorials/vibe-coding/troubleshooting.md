@@ -1,3 +1,8 @@
+---
+layout: default
+title: Vibe Coding 故障排除指南
+---
+
 # Vibe Coding 故障排除指南
 
 > 解决 Vibe Coding 和 Cursor 使用中的常见问题

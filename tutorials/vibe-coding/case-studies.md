@@ -1,3 +1,8 @@
+---
+layout: default
+title: Vibe Coding 实战项目案例
+---
+
 # Vibe Coding 实战项目案例
 
 > 通过真实项目案例，学习如何使用 Vibe Coding 完成完整的产品开发

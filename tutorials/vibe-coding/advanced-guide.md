@@ -1,3 +1,8 @@
+---
+layout: default
+title: Vibe Coding 高级指南
+---
+
 # Vibe Coding 高级指南
 
 > 深入掌握 Vibe Coding 的高级技巧、最佳实践和进阶应用

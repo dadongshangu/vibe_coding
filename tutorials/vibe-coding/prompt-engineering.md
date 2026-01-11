@@ -1,3 +1,8 @@
+---
+layout: default
+title: Prompt 工程完全指南
+---
+
 # Prompt 工程完全指南
 
 > 掌握与 AI 高效沟通的艺术，编写高质量的 Prompt

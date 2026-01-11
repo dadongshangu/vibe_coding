@@ -1,3 +1,8 @@
+---
+layout: default
+title: Vibe Coding 初学者完全指南
+---
+
 # Vibe Coding 初学者完全指南
 
 > 适合零基础学习者的 Vibe Coding 和 Cursor 使用指南

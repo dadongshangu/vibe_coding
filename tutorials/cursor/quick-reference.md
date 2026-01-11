@@ -1,3 +1,8 @@
+---
+layout: default
+title: Cursor 快速参考手册
+---
+
 # Cursor 快速参考手册
 
 > Cursor IDE 快捷键、命令和配置速查表

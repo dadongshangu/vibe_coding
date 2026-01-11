@@ -1,3 +1,8 @@
+---
+layout: default
+title: 教程索引
+---
+
 # 教程索引
 
 > Vibe Coding 和 Cursor 完整教程体系
