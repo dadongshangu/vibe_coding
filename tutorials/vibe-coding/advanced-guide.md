@@ -808,18 +808,18 @@ AI 生成的代码可能不符合你的预期：
   <div style="flex: 1; min-width: 150px;">
     <p style="margin: 0; color: #666; font-size: 14px;">上一篇</p>
     <p style="margin: 5px 0 0 0;">
-      <a href="/vibe_coding/tutorials/vibe-coding/prompt-engineering.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">← Prompt 工程完全指南</a>
+      <a href="prompt-engineering.md" style="color: #0366d6; text-decoration: none; font-weight: 500;">← Prompt 工程完全指南</a>
     </p>
   </div>
   <div style="flex: 1; text-align: center; min-width: 150px;">
     <p style="margin: 0;">
-      <a href="/vibe_coding/" style="color: #0366d6; text-decoration: none; font-weight: 500;">🏠 返回主页</a>
+      <a href="../../README.md" style="color: #0366d6; text-decoration: none; font-weight: 500;">🏠 返回主页</a>
     </p>
   </div>
   <div style="flex: 1; text-align: right; min-width: 150px;">
     <p style="margin: 0; color: #666; font-size: 14px;">下一篇</p>
     <p style="margin: 5px 0 0 0;">
-      <a href="/vibe_coding/tutorials/cursor/advanced-features.html" style="color: #0366d6; text-decoration: none; font-weight: 500;">Cursor 高级功能指南 →</a>
+      <a href="../cursor/advanced-features.md" style="color: #0366d6; text-decoration: none; font-weight: 500;">Cursor 高级功能指南 →</a>
     </p>
   </div>
 </div>
