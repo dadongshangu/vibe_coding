@@ -569,6 +569,7 @@ DELETE /api/articles/:id    # 删除文章（需要认证）
 - 查看 [高级指南](./advanced-guide.md) 学习更多技巧
 - 学习 [Prompt 工程](./prompt-engineering.md) 提高效率
 - 阅读 [故障排除](./troubleshooting.md) 解决常见问题
+- 如果是芯片工程师，查看 [芯片设计中的应用](./hardware-design.md)
 
 ---
 

@@ -27,6 +27,7 @@
 12. **[工具对比和选择指南](tutorials/vibe-coding/tools-comparison.md)** - 全面对比主流 AI 编程工具
 13. **[VS Code AI 集成指南](tutorials/vibe-coding/vscode-integration.md)** - 在 VS Code 中使用 AI 工具
 14. **[其他 AI 编程工具](tutorials/vibe-coding/other-tools.md)** - GitHub Copilot、Tabnine、Codeium 等
+15. **[芯片设计中的应用](tutorials/vibe-coding/hardware-design.md)** - Verilog 和 ASIC 设计的实用技巧
 
 ## 📚 目录结构
 
@@ -41,7 +42,8 @@ vibe_coding/
 │   │   ├── troubleshooting.md     # 故障排除指南
 │   │   ├── tools-comparison.md    # 工具对比和选择指南
 │   │   ├── vscode-integration.md  # VS Code AI 集成指南
-│   │   └── other-tools.md         # 其他 AI 编程工具
+│   │   ├── other-tools.md         # 其他 AI 编程工具
+│   │   └── hardware-design.md    # 芯片设计中的应用
 │   ├── cursor/            # Cursor 相关教程
 │   │   ├── quick-reference.md     # 快速参考手册
 │   │   └── advanced-features.md   # 高级功能指南
@@ -124,6 +126,13 @@ vibe_coding/
   - Tabnine 使用指南
   - Codeium 完全指南
   - Bito AI 使用指南
+
+- **[芯片设计中的应用](tutorials/vibe-coding/hardware-design.md)** - 专为芯片工程师打造
+  - Verilog 代码生成技巧
+  - 测试平台生成
+  - 代码审查和优化
+  - 实际应用案例
+  - 工具推荐和配置
   - 其他工具简介
 
 ### 🛠️ Cursor 教程

@@ -1842,6 +1842,7 @@ Vibe Coding 和 AI 编码助手正在快速发展：
 - 学习 [实战项目案例](./case-studies.md)
 - 阅读 [故障排除指南](./troubleshooting.md)
 - 探索 [Cursor 高级功能](../cursor/advanced-features.md)
+- 如果是芯片工程师，查看 [芯片设计中的应用](./hardware-design.md)
 
 ---
 
