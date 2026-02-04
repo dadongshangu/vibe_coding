@@ -5,15 +5,16 @@
 ## 📋 目录
 
 1. [简介](#简介)
-2. [安装](#安装)
-3. [验证安装](#验证安装)
-4. [交互式模式](#交互式模式)
-5. [非交互式模式（脚本/无头）](#非交互式模式脚本无头)
-6. [工作模式](#工作模式)
-7. [会话管理](#会话管理)
-8. [Cloud Agent 交接](#cloud-agent-交接)
-9. [常用场景示例](#常用场景示例)
-10. [故障排除](#故障排除)
+2. [依赖要求](#依赖要求)
+3. [安装](#安装)
+4. [验证安装](#验证安装)
+5. [交互式模式](#交互式模式)
+6. [非交互式模式（脚本/无头）](#非交互式模式脚本无头)
+7. [工作模式](#工作模式)
+8. [会话管理](#会话管理)
+9. [Cloud Agent 交接](#cloud-agent-交接)
+10. [常用场景示例](#常用场景示例)
+11. [故障排除](#故障排除)
 
 ---
 
@@ -30,6 +31,46 @@
 
 ---
 
+## 依赖要求
+
+Cursor CLI 依赖 **ripgrep (rg)** 进行代码库搜索。未安装时会出现：
+
+```text
+Could not find ripgrep (rg) binary. Please install ripgrep. Error: rg is not installed
+```
+
+导致 `agent`、`agent ls`、`agent -p "..."` 等命令无法正常使用（仅 `agent about`、`agent --version` 等不依赖搜索的命令可用）。
+
+### 安装 ripgrep
+
+**Windows（推荐用 winget）：**
+
+```powershell
+winget install --id BurntSushi.ripgrep.GNU --accept-package-agreements --accept-source-agreements
+```
+
+若未安装 winget，可使用 [Chocolatey](https://chocolatey.org/)：`choco install ripgrep`，或从 [GitHub Releases](https://github.com/BurntSushi/ripgrep/releases) 下载并解压到 PATH。
+
+**macOS：**
+
+```bash
+brew install ripgrep
+```
+
+**Linux / WSL：**
+
+```bash
+# Ubuntu/Debian
+sudo apt install ripgrep
+
+# 或从项目根目录
+curl -LO https://github.com/BurntSushi/ripgrep/releases/latest/download/ripgrep_*.deb && sudo dpkg -i ripgrep_*.deb
+```
+
+安装完成后**新开一个终端**，执行 `rg --version` 确认可用，再使用 `agent`。
+
+---
+
 ## 安装
 
 ### Windows（PowerShell）
@@ -42,13 +83,33 @@ irm 'https://cursor.com/install?win32=true' | iex
 
 安装完成后，**重新打开终端**（或新开一个 PowerShell 窗口），再使用 `agent` 命令。
 
-### macOS / Linux / WSL
+### macOS / Linux
 
 ```bash
 curl https://cursor.com/install -fsS | bash
 ```
 
 安装后若找不到 `agent`，可重启终端或执行 `source ~/.bashrc` / `source ~/.zshrc`。
+
+### WSL（Windows 子系统 for Linux）
+
+**可以**在 WSL 中使用 Cursor CLI，且推荐在 WSL 内安装 Linux 版，避免 Windows 下 PATH、ripgrep 等依赖问题。
+
+1. **在 WSL 终端**（如 Ubuntu）中安装 CLI：
+
+```bash
+curl https://cursor.com/install -fsS | bash
+```
+
+2. **在 WSL 内安装 ripgrep**（一条命令即可，无需 winget）：
+
+```bash
+sudo apt update && sudo apt install -y ripgrep
+```
+
+3. 新开一个 WSL 终端，执行 `agent --version` 和 `rg --version` 确认可用，然后即可使用 `agent`、`agent -p "..."` 等。
+
+说明：WSL 中运行的是 Linux 环境，使用与 Linux 相同的安装方式；认证会使用 Cursor 账户（首次可能需在已登录 Cursor 的 Windows 端完成一次关联，或按提示登录）。
 
 ---
 
@@ -234,6 +295,12 @@ agent -p "审查当前 git 改动，关注安全和可读性"
 ---
 
 ## 故障排除
+
+### 报错：Could not find ripgrep (rg) binary
+
+说明系统未安装 **ripgrep**，Cursor CLI 的搜索与对话功能依赖它。请按上文 [依赖要求](#依赖要求) 安装 ripgrep，然后**重新打开终端**再运行 `agent`。验证：`rg --version` 能输出版本号即可。
+
+**Windows 上 winget 安装 ripgrep 失败时**（如提示“文件被占用”等）：可改用 **WSL**，在 WSL 内执行 `sudo apt install ripgrep` 并安装 Cursor CLI（见上文 [WSL](#wslwindows-子系统-for-linux)），一般更稳定。
 
 ### 找不到 `agent` 命令
 
