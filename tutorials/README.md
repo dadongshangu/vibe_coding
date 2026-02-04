@@ -86,6 +86,13 @@
   - 代码库索引
   - 性能调优
 
+### 📂 Git 与 GitHub
+
+- **[Git 与 GitHub 入门：Star、Clone、Fork 怎么选？](git-github/beginner-guide.md)** ⭐ 不熟 GitHub 推荐
+  - Star / Clone / Fork 区别与使用场景
+  - “给自己用”时如何选择
+  - 常用 Git 命令速查
+
 ### 💻 Claude Code 教程
 
 #### 入门指南
@@ -108,20 +115,22 @@
 ### 路径 1：快速入门（1周）
 1. [初学者完全指南](vibe-coding/beginner-guide.md)
 2. [快速参考手册](cursor/quick-reference.md)
-3. [Cursor CLI 安装与使用](cursor/cursor-cli.md)（可选：喜欢终端的读者）
-4. [Claude Code 入门指南](claude-code/beginner-guide.md)
-5. 完成第一个项目
+3. [Git 与 GitHub 入门](git-github/beginner-guide.md)（可选：不熟 GitHub 时推荐）
+4. [Cursor CLI 安装与使用](cursor/cursor-cli.md)（可选：喜欢终端的读者）
+5. [Claude Code 入门指南](claude-code/beginner-guide.md)
+6. 完成第一个项目
 
 ### 路径 2：系统学习（1个月）
 1. [初学者完全指南](vibe-coding/beginner-guide.md)
 2. [快速参考手册](cursor/quick-reference.md)
-3. [Cursor CLI 安装与使用](cursor/cursor-cli.md)
-4. [Claude Code 入门指南](claude-code/beginner-guide.md)
-5. [Prompt 工程完全指南](vibe-coding/prompt-engineering.md)
-6. [高级指南](vibe-coding/advanced-guide.md)
-7. [Cursor 高级功能指南](cursor/advanced-features.md)
-8. [Claude Code 高级技巧](claude-code/advanced-techniques.md)
-9. [实战项目案例](vibe-coding/case-studies.md)
+3. [Git 与 GitHub 入门](git-github/beginner-guide.md)
+4. [Cursor CLI 安装与使用](cursor/cursor-cli.md)
+5. [Claude Code 入门指南](claude-code/beginner-guide.md)
+6. [Prompt 工程完全指南](vibe-coding/prompt-engineering.md)
+7. [高级指南](vibe-coding/advanced-guide.md)
+8. [Cursor 高级功能指南](cursor/advanced-features.md)
+9. [Claude Code 高级技巧](claude-code/advanced-techniques.md)
+10. [实战项目案例](vibe-coding/case-studies.md)
 
 ### 路径 3：深入学习（2-3个月）
 1. 完成路径 2 的所有内容
