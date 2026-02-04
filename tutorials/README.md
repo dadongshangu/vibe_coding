@@ -73,6 +73,12 @@
   - 常用命令
   - 配置建议
 
+- **[Cursor CLI 安装与使用](cursor/cursor-cli.md)** ⭐ 终端里用 AI
+  - 安装（Windows / macOS / Linux）
+  - 交互式与无头模式
+  - 脚本与 CI 自动化
+  - 会话与 Cloud Agent
+
 #### 高级功能
 - **[高级功能指南](cursor/advanced-features.md)**
   - Composer 深度使用
@@ -102,18 +108,20 @@
 ### 路径 1：快速入门（1周）
 1. [初学者完全指南](vibe-coding/beginner-guide.md)
 2. [快速参考手册](cursor/quick-reference.md)
-3. [Claude Code 入门指南](claude-code/beginner-guide.md)
-4. 完成第一个项目
+3. [Cursor CLI 安装与使用](cursor/cursor-cli.md)（可选：喜欢终端的读者）
+4. [Claude Code 入门指南](claude-code/beginner-guide.md)
+5. 完成第一个项目
 
 ### 路径 2：系统学习（1个月）
 1. [初学者完全指南](vibe-coding/beginner-guide.md)
 2. [快速参考手册](cursor/quick-reference.md)
-3. [Claude Code 入门指南](claude-code/beginner-guide.md)
-4. [Prompt 工程完全指南](vibe-coding/prompt-engineering.md)
-5. [高级指南](vibe-coding/advanced-guide.md)
-6. [Cursor 高级功能指南](cursor/advanced-features.md)
-7. [Claude Code 高级技巧](claude-code/advanced-techniques.md)
-8. [实战项目案例](vibe-coding/case-studies.md)
+3. [Cursor CLI 安装与使用](cursor/cursor-cli.md)
+4. [Claude Code 入门指南](claude-code/beginner-guide.md)
+5. [Prompt 工程完全指南](vibe-coding/prompt-engineering.md)
+6. [高级指南](vibe-coding/advanced-guide.md)
+7. [Cursor 高级功能指南](cursor/advanced-features.md)
+8. [Claude Code 高级技巧](claude-code/advanced-techniques.md)
+9. [实战项目案例](vibe-coding/case-studies.md)
 
 ### 路径 3：深入学习（2-3个月）
 1. 完成路径 2 的所有内容
