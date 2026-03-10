@@ -9,14 +9,17 @@
 #### 初学者路径（1-2周）
 1. **[Vibe Coding 初学者完全指南](tutorials/vibe-coding/beginner-guide.md)** - 从零开始学习 Vibe Coding 和 Cursor
 2. **[Cursor 快速参考手册](tutorials/cursor/quick-reference.md)** - Cursor 快捷键和命令速查
-3. **[Claude Code 入门指南](tutorials/claude-code/beginner-guide.md)** - 学习命令行 AI 编程助手
-4. **[Hello Vibe Coding 示例项目](examples/hello-vibe-coding/)** - 通过实践项目巩固学习
+3. **[Git 与 GitHub 入门](tutorials/git-github/beginner-guide.md)** - 弄清 Star / Clone / Fork 区别
+4. **[Cursor CLI 安装与使用](tutorials/cursor/cursor-cli.md)** - 在终端里使用 Cursor Agent（可选）
+5. **[Claude Code 入门指南](tutorials/claude-code/beginner-guide.md)** - 学习命令行 AI 编程助手
+6. **[Hello Vibe Coding 示例项目](examples/hello-vibe-coding/)** - 通过实践项目巩固学习
 
 #### 进阶路径（2-4周）
-5. **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握与 AI 高效沟通的艺术
-6. **[Vibe Coding 高级指南](tutorials/vibe-coding/advanced-guide.md)** - 深入学习高级技巧和最佳实践
-7. **[Cursor 高级功能指南](tutorials/cursor/advanced-features.md)** - 掌握 Cursor 的高级功能
-8. **[Claude Code 高级技巧](tutorials/claude-code/advanced-techniques.md)** - 掌握 Claude Code 的高级功能
+7. **[Prompt 工程完全指南](tutorials/vibe-coding/prompt-engineering.md)** - 掌握与 AI 高效沟通的艺术
+8. **[Vibe Coding 高级指南](tutorials/vibe-coding/advanced-guide.md)** - 深入学习高级技巧和最佳实践
+9. **[Cursor 高级功能指南](tutorials/cursor/advanced-features.md)** - 掌握 Cursor 的高级功能
+10. **[OpenClaw 入门与本地模型指南](tutorials/openclaw/beginner-guide.md)** - 养“龙虾”、本地模型与云模型的组合
+11. **[Claude Code 高级技巧](tutorials/claude-code/advanced-techniques.md)** - 掌握 Claude Code 的高级功能
 
 #### 实战路径（1-2个月）
 9. **[实战项目案例](tutorials/vibe-coding/case-studies.md)** - 学习完整项目的开发过程
@@ -46,7 +49,12 @@ vibe_coding/
 │   │   └── hardware-design.md    # 芯片设计中的应用
 │   ├── cursor/            # Cursor 相关教程
 │   │   ├── quick-reference.md     # 快速参考手册
+│   │   ├── cursor-cli.md          # Cursor CLI 安装与使用
 │   │   └── advanced-features.md   # 高级功能指南
+│   ├── openclaw/          # OpenClaw（养龙虾）相关教程
+│   │   └── beginner-guide.md      # 入门与本地模型指南
+│   ├── git-github/        # Git 与 GitHub 使用教程
+│   │   └── beginner-guide.md      # Star / Clone / Fork 入门
 │   └── claude-code/      # Claude Code 相关教程
 │       ├── beginner-guide.md      # 入门指南
 │       └── advanced-techniques.md  # 高级技巧
@@ -144,6 +152,11 @@ vibe_coding/
   - 界面布局说明
   - 配置建议
   - AI 功能使用
+  
+- **[Cursor CLI 安装与使用](tutorials/cursor/cursor-cli.md)** - 终端里用 Cursor Agent
+  - Windows / macOS / Linux 安装
+  - 交互模式与无头（脚本）模式
+  - WSL 使用与常见报错（如 ripgrep、Exec format error）排错
 
 #### 高级功能
 - **[高级功能指南](tutorials/cursor/advanced-features.md)** - 深入掌握
@@ -154,6 +167,21 @@ vibe_coding/
   - 扩展和集成
   - 性能调优
   - 高级技巧
+
+### 🦞 OpenClaw / 养龙虾
+
+- **[OpenClaw 入门与本地模型指南](tutorials/openclaw/beginner-guide.md)** - 想“养龙虾”的推荐
+  - OpenClaw 是什么，适合谁用
+  - Windows + WSL 环境下的安装与基础配置
+  - Windows + GTX 1060 本地模型（Ollama/LM Studio）、飞书集成
+  - Mac mini vs Windows 独显、本地 vs 云端、成本（电费/token）对比
+
+### 📂 Git 与 GitHub
+
+- **[Git 与 GitHub 入门：Star、Clone、Fork 怎么选？](tutorials/git-github/beginner-guide.md)** - 不熟 GitHub 时推荐
+  - Star / Clone / Fork 区别与使用场景
+  - “给自己用”时如何选择
+  - 常用 Git 命令速查
 
 ### 💻 Claude Code 教程
 
