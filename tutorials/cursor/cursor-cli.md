@@ -109,7 +109,7 @@ sudo apt update && sudo apt install -y ripgrep
 
 3. 新开一个 WSL 终端，执行 `agent --version` 和 `rg --version` 确认可用，然后即可使用 `agent`、`agent -p "..."` 等。
 
-说明：WSL 中运行的是 Linux 环境，使用与 Linux 相同的安装方式；认证会使用 Cursor 账户（首次可能需在已登录 Cursor 的 Windows 端完成一次关联，或按提示登录）。
+说明：WSL 中运行的是 Linux 环境，使用与 Linux 相同的安装方式；认证会使用 Cursor 账户（首次可能需在已登录 Cursor 的 Windows 端完成一次关联，或按提示登录）。若出现 `node: cannot execute binary file: Exec format error`，多为架构不匹配，见 [故障排除](#wsl-下报错node-cannot-execute-binary-file-exec-format-error)。
 
 ---
 
@@ -301,6 +301,21 @@ agent -p "审查当前 git 改动，关注安全和可读性"
 说明系统未安装 **ripgrep**，Cursor CLI 的搜索与对话功能依赖它。请按上文 [依赖要求](#依赖要求) 安装 ripgrep，然后**重新打开终端**再运行 `agent`。验证：`rg --version` 能输出版本号即可。
 
 **Windows 上 winget 安装 ripgrep 失败时**（如提示“文件被占用”等）：可改用 **WSL**，在 WSL 内执行 `sudo apt install ripgrep` 并安装 Cursor CLI（见上文 [WSL](#wslwindows-子系统-for-linux)），一般更稳定。
+
+### WSL 下报错：node: cannot execute binary file: Exec format error
+
+这是 **CPU 架构不匹配**导致的：Cursor CLI 自带的 `node` 与当前 WSL 的架构不一致（例如 WSL 是 ARM/aarch64 但下载了 x86_64 的 node，或安装脚本选错了平台）。
+
+**可尝试**：
+
+1. **确认 WSL 架构**：在 WSL 里执行 `uname -m`。若为 `aarch64` 则为 ARM，`x86_64` 则为 64 位 x86。
+2. **完全卸载后重装**，让安装脚本重新拉取与当前架构匹配的二进制：
+   ```bash
+   rm -rf ~/.local/share/cursor-agent ~/.local/bin/agent
+   curl https://cursor.com/install -fsS | bash
+   ```
+   然后新开终端再试 `agent --version`。
+3. **若仍报同样错误**：多为 Cursor 官方对部分 WSL/ARM 组合尚未适配，属于已知问题。**临时方案**：在 **Windows PowerShell** 中安装并使用 Cursor CLI（见上文 [Windows 安装](#windowspowershell)），在 PowerShell 里运行 `agent` 可正常使用。
 
 ### 找不到 `agent` 命令
 
