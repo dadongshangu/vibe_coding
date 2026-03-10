@@ -8,12 +8,15 @@
 2. [OpenClaw 适合谁用？](#openclaw-适合谁用)
 3. [架构快速理解：云模型 vs 本地模型](#架构快速理解云模型-vs-本地模型)
 4. [在 Windows 上安装 OpenClaw](#在-windows-上安装-openclaw)
-5. [在 Windows + GTX 1060 上跑本地模型](#在-windows--gtx-1060-上跑本地模型)
-6. [一步一步的安装攻略（从零开始）](#一步一步的安装攻略从零开始)
-7. [与飞书集成（可选）](#与飞书集成可选)
-8. [硬件方案与云/本地选择](#硬件方案与云本地选择)
-9. [常见问题与限制](#常见问题与限制)
-10. [进一步阅读](#进一步阅读)
+5. [在 WSL 中安装 OpenClaw](#在-wsl-中安装-openclaw)
+6. [在 Mac mini 上安装 OpenClaw](#在-mac-mini-上安装-openclaw)
+7. [在 Windows + GTX 1060 上跑本地模型](#在-windows--gtx-1060-上跑本地模型)
+8. [本地模型与云端模型的配置](#本地模型与云端模型的配置)
+9. [一步一步的安装攻略（从零开始）](#一步一步的安装攻略从零开始)
+10. [与飞书集成（可选）](#与飞书集成可选)
+11. [硬件方案与云/本地选择](#硬件方案与云本地选择)
+12. [常见问题与限制](#常见问题与限制)
+13. [进一步阅读](#进一步阅读)
 
 ---
 
@@ -124,6 +127,100 @@ openclaw dashboard   # 打开管理面板
 
 ---
 
+## 在 WSL 中安装 OpenClaw
+
+如果你习惯在 **WSL2（Ubuntu 等）** 里开发，可以在 WSL 内直接安装 OpenClaw，和 Linux 环境一致；本地模型可以跑在 Windows 主机（如 Ollama），WSL 里的 OpenClaw 通过 `localhost` 访问即可。
+
+### 1. 前置条件
+
+- **Windows 10/11** 已启用 **WSL2**（未安装可执行：`wsl --install`，然后重启）
+- **Node.js 18+**（推荐 22+）。若未安装，安装脚本可能自动安装，或手动：`sudo apt update && sudo apt install -y nodejs`
+- **ripgrep**：OpenClaw 依赖，建议先装：`sudo apt update && sudo apt install -y ripgrep`
+
+### 2. 一键安装
+
+在 **WSL 终端**（如 Ubuntu）中执行：
+
+```bash
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
+
+或带更强安全选项：
+
+```bash
+curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash
+```
+
+脚本会检测系统（含 WSL2）、安装 OpenClaw、加入 PATH，并提示你运行引导。
+
+### 3. 安装后配置与验证
+
+```bash
+# 引导配置（账户、模型等）
+openclaw onboard
+
+# 打开 Web 控制台
+openclaw dashboard
+
+# 自检环境
+openclaw doctor
+```
+
+### 4. 若本地模型跑在 Windows 主机
+
+- 在 **Windows** 上安装并启动 Ollama（见前文「在 Windows + GTX 1060 上跑本地模型」）。
+- 在 WSL 里，Ollama 的 API 一般可通过 **`http://localhost:11434`** 访问（WSL2 会转发到宿主机）。
+- 在 OpenClaw 的配置里，把 Ollama 的 `apiBase` 设为 `http://127.0.0.1:11434/v1` 或 `http://localhost:11434/v1` 即可。
+
+若 `localhost` 不通，可用 Windows 宿主机在 WSL 中的 IP（在 WSL 里执行 `cat /etc/resolv.conf` 查看 `nameserver`，或 `hostname -I` 取宿主机在 WSL 网段的 IP，再在配置里把 `127.0.0.1` 换成该 IP）。
+
+---
+
+## 在 Mac mini 上安装 OpenClaw
+
+**Mac mini**（含 Apple Silicon M 系列与 Intel 款）适合作为常驻“养龙虾”主机，多数用户以**云端模型为主**，本地可选择性跑 7B 左右模型。
+
+### 1. 系统要求
+
+- **macOS 12（Monterey）** 或更高，推荐 macOS 13+
+- **Apple Silicon（M1/M2/M3/M4）** 或 **Intel** 均可；安装脚本会自动识别架构
+- **内存**：建议 8GB 以上，若跑本地模型建议 16GB+
+- **Node.js 22+**（安装脚本可自动安装，或先用 `brew install node@22`）
+
+### 2. 一键安装
+
+在 **终端.app** 或 iTerm 中执行：
+
+```bash
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
+
+脚本会完成安装并加入 PATH。
+
+### 3. 安装后配置与验证
+
+```bash
+openclaw onboard    # 引导配置
+openclaw dashboard # Web 控制台
+openclaw doctor    # 自检
+```
+
+### 4. 本地模型（可选）
+
+若想在 Mac 上跑本地模型，可安装 **Ollama**：
+
+```bash
+# 使用 Homebrew（若已安装）
+brew install ollama
+
+# 或从官网下载 macOS 安装包：https://ollama.com/
+```
+
+安装后启动 Ollama，拉取 7B 模型（如 `ollama pull qwen2.5:7b`），在 OpenClaw 配置里添加 `ollama` provider，`apiBase` 设为 `http://127.0.0.1:11434/v1`。  
+Mac mini 通常以**云端模型为主**，本地 7B 作补充即可。
+
+---
+
 ## 在 Windows + GTX 1060 上跑本地模型
 
 你的显卡是 **GTX 1060（6GB 显存）**，现实情况大致是：
@@ -204,7 +301,7 @@ OpenClaw 的具体配置文件路径可能略有差异，这里给一个**示意
 - `contextWindow` / `maxTokens`：可以按显存情况适当调小，避免 OOM
 - `mode: "merge"`：表示允许和其他云模型“混用”，本地不够用时可以让云模型兜底
 
-实际编辑配置时，建议参考官方文档当前推荐格式，把上面这些关键字段“迁移”进去即可。
+实际编辑配置时，建议参考官方文档当前推荐格式，把上面这些关键字段“迁移”进去即可。**纯本地、纯云端、混合模式的完整配置示例**见下方 [本地模型与云端模型的配置](#本地模型与云端模型的配置)。
 
 ### 4. 备用方案：LM Studio
 
@@ -220,6 +317,108 @@ OpenClaw 的具体配置文件路径可能略有差异，这里给一个**示意
 ```
 
 其他配置思路与 Ollama 类似。
+
+---
+
+## 本地模型与云端模型的配置
+
+OpenClaw 通过**配置文件**决定使用哪些模型、默认用谁、以及是否“混合”使用。配置文件路径可通过 `openclaw config path` 查看，常见位置为 `~/.openclaw/openclaw.json`（Linux/macOS）或 `%USERPROFILE%\.openclaw\openclaw.json`（Windows）。下面按三种典型用法给出配置思路和示例片段。
+
+### 1. 纯本地模型（仅 Ollama / LM Studio）
+
+只使用本机已部署的模型，不调用任何云端 API：
+
+```json
+{
+  "models": {
+    "providers": {
+      "ollama": {
+        "apiBase": "http://127.0.0.1:11434/v1",
+        "apiKey": "local"
+      }
+    },
+    "defaults": {
+      "chat": {
+        "provider": "ollama",
+        "model": "qwen2.5-coder:7b",
+        "contextWindow": 8192,
+        "maxTokens": 1024
+      }
+    }
+  }
+}
+```
+
+- `apiBase`：Ollama 默认为 `http://127.0.0.1:11434/v1`；LM Studio 多为 `http://127.0.0.1:1234/v1`。
+- `model`：与 `ollama list` 或 LM Studio 中显示的模型名一致。
+- 本地一般不校验 `apiKey`，填占位即可。
+
+### 2. 纯云端模型（仅 OpenAI / Claude / 国内 API）
+
+不跑本地模型，全部走云端（适合 Mac mini 或没有独显的机器）：
+
+```json
+{
+  "models": {
+    "providers": {
+      "openai": {
+        "apiBase": "https://api.openai.com/v1",
+        "apiKey": "sk-你的OpenAI密钥"
+      }
+    },
+    "defaults": {
+      "chat": {
+        "provider": "openai",
+        "model": "gpt-4o-mini",
+        "contextWindow": 128000,
+        "maxTokens": 4096
+      }
+    }
+  }
+}
+```
+
+若使用 Anthropic Claude，可增加 `anthropic` provider，并在 `defaults.chat` 里指定 `provider: "anthropic"` 和对应 `model`；国内厂商（如阿里云、DeepSeek 等）一般提供 OpenAI 兼容接口，可沿用 `openai` 或单独建一个 provider，`apiBase` 指向其 endpoint。
+
+### 3. 混合模式：本地为主 + 云端兜底（推荐）
+
+日常对话、代码等走本地模型，复杂或长上下文任务交给云端。关键是同时配置本地与云端 provider，并设置 `mode: "merge"`，默认聊天指向本地：
+
+```json
+{
+  "models": {
+    "providers": {
+      "ollama": {
+        "apiBase": "http://127.0.0.1:11434/v1",
+        "apiKey": "local"
+      },
+      "openai": {
+        "apiBase": "https://api.openai.com/v1",
+        "apiKey": "sk-你的OpenAI密钥"
+      }
+    },
+    "defaults": {
+      "chat": {
+        "provider": "ollama",
+        "model": "qwen2.5-coder:7b",
+        "contextWindow": 8192,
+        "maxTokens": 1024
+      }
+    },
+    "mode": "merge"
+  }
+}
+```
+
+- **`mode: "merge"`**：表示多个 provider 并存，可在对话或任务中按需切换到云端模型（具体切换方式以 OpenClaw 当前版本为准，如通过界面选择、指令或配置规则）。
+- 默认 `chat` 设为 `ollama`，即日常先走本地；需要更强能力时再选云端模型。
+
+### 4. 配置后生效方式
+
+- 保存配置文件后，一般需**重启 OpenClaw 服务**（或重新执行 `openclaw start` / 重启系统/用户服务）才能生效。
+- 可用 `openclaw doctor` 检查配置是否被正确加载；在 dashboard 或 CLI 中发起一次对话，确认使用的模型与预期一致。
+
+以上为通用思路，实际字段名（如 `defaults` / `default`、`chat` / `completion`）可能随 OpenClaw 版本略有差异，请以官方文档或 `openclaw config path` 打开的实际配置文件为准，将上述思路对应过去即可。
 
 ---
 
